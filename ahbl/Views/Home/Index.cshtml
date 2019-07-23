@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="divTable blueTable">
+    <div class="divTableBody">
+        <div class="divTableRow">
+            <div class="divTableCell">Secret</div>
+            <div class="divTableCell">@ViewBag.Secret</div>
+        </div>
+        <div class="divTableRow">
+            <div class="divTableCell">Principal User Id</div>
+            <div class="divTableCell">@ViewBag.Principal</div>
+        </div>
+        @Html.Raw(ViewBag.Headers)
+    </div>
+</div>
